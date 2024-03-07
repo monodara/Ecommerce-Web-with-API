@@ -2,6 +2,7 @@
   "name": "fs17-fe-project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://monodara.github.io/Ecommerce-Web-with-API",
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
@@ -35,7 +36,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!@codemirror)/' --coverage",
     "eject": "react-scripts eject",
-    "test-coverage": "jest --coverage"
+    "test-coverage": "jest --coverage",
+    "predeploy": "npm run build",
+      "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
