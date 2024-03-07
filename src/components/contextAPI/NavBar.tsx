@@ -100,7 +100,7 @@ function Navbar() {
     >
       <div className="flex flex-row-reverse mt-6">
         {user && <UserLogoutButton />}
-        <Link to={user ? "./profile" : "./login"}>
+        <Link to={user ? "/profile" : "/login"}>
           <AccountCircle
             className={iconStyle}
             style={{
@@ -140,7 +140,7 @@ function Navbar() {
             horizontal: "right",
           }}
         >
-          <Link to="./wishlist">
+          <Link to="/wishlist">
             <FavoriteIcon
               className={iconStyle}
               style={{
